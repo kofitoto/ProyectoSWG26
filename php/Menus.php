@@ -26,6 +26,7 @@
       $logInMail = $_REQUEST['logInMail'];
       echo "<span id='inicio'><a id='ini' href='Layout.php?logInMail=$logInMail'>Inicio</a></span>";
       echo "<span id='insertar'><a id='ins' href='QuestionFormWithImage.php?logInMail=$logInMail'>Insertar pregunta</a></span>";
+      echo "<span id='insertarAJAX'><a id='ins' href='HandlingQuizesAjax.php?logInMail=$logInMail'>Insertar pregunta con AJAX</a></span>";
       echo "<span id='creditos'> <a id='cre' href='Credits.php?logInMail=$logInMail'> Creditos </a> </span>";
       echo "<span id='verBD'> <a id='ver' href='ShowQuestionsWithImage.php?logInMail=$logInMail'> Ver preguntas BD </a> </span>";
       echo "<span id='PreguntasXML'> <a id='XMLQueston' href='ShowXmlQuestions.php?logInMail=$logInMail'> ver PreguntasXML </a> </span>";

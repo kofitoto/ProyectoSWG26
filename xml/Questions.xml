@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="ShowXmlQuestions.xsl"?>
 <assessmentItems>
 	<assessmentItem subject="Web" author="jvadillo001@ikasle.ehu.eus">
 		<itemBody>
-			<p>Tag HTML para a&#xF1;adir un formulario</p>
+			<p>Tag HTML para añadir un formulario</p>
 		</itemBody>
 		<correctResponse>
 			<response>
@@ -18,7 +18,7 @@
 	</assessmentItem>
 		<assessmentItem subject="Internet" author="rarruabarrena001@ikasle.ehu.eus">
 		<itemBody>
-			<p>Este protocolo acabar&#xE1; funcionando
+			<p>Este protocolo acabará funcionando
 			incluso entre dos latas unidas por un cordon</p>
 		</itemBody>
 		<correctResponse>
@@ -32,4 +32,4 @@
 			<response> Ninguna es correcta </response>
 		</incorrectResponses>
 	</assessmentItem>
-</assessmentItems>
+<assessmentItem subject="hola" author="endika123@ikasle.ehu.eus"><itemBody><p>holawerwerwerwr</p></itemBody><correctResponse><response>hola</response></correctResponse><incorrectResponses><response>hola</response><response>hola</response><response>hola</response></incorrectResponses></assessmentItem><assessmentItem subject="rtrtrtrtr" author="endika003@ikasle.ehu.eus"><itemBody><p>ererererererer</p></itemBody><correctResponse><response>1</response></correctResponse><incorrectResponses><response>2</response><response>3</response><response>4</response></incorrectResponses></assessmentItem><assessmentItem subject="endika" author="endika003@ikasle.ehu.eus"><itemBody><p>endika ??????</p></itemBody><correctResponse><response>1</response></correctResponse><incorrectResponses><response>2</response><response>3</response><response>4</response></incorrectResponses></assessmentItem><assessmentItem subject="endika" author="endika003@ikasle.ehu.eus"><itemBody><p>endika ??????</p></itemBody><correctResponse><response>1</response></correctResponse><incorrectResponses><response>2</response><response>3</response><response>4</response></incorrectResponses></assessmentItem><assessmentItem subject="endika" author="endika003@ikasle.ehu.eus"><itemBody><p>endika ??????</p></itemBody><correctResponse><response>1</response></correctResponse><incorrectResponses><response>2</response><response>3</response><response>4</response></incorrectResponses></assessmentItem><assessmentItem subject="endika" author="endika003@ikasle.ehu.eus"><itemBody><p>endika ??????</p></itemBody><correctResponse><response>1</response></correctResponse><incorrectResponses><response>2</response><response>3</response><response>4</response></incorrectResponses></assessmentItem><assessmentItem subject="endika" author="endika003@ikasle.ehu.eus"><itemBody><p>endika ??????</p></itemBody><correctResponse><response>1</response></correctResponse><incorrectResponses><response>2</response><response>3</response><response>4</response></incorrectResponses></assessmentItem><assessmentItem subject="estado de salud" author="endika003@ikasle.ehu.eus"><itemBody><p>que tal todo</p></itemBody><correctResponse><response>bien</response></correctResponse><incorrectResponses><response>mal</response><response>muy mal</response><response>fatal</response></incorrectResponses></assessmentItem><assessmentItem subject="estado de salud" author="endika003@ikasle.ehu.eus"><itemBody><p>que tal todo</p></itemBody><correctResponse><response>bien</response></correctResponse><incorrectResponses><response>mal</response><response>muy mal</response><response>fatal</response></incorrectResponses></assessmentItem><assessmentItem subject="estado de salud" author="endika003@ikasle.ehu.eus"><itemBody><p>que tal todo</p></itemBody><correctResponse><response>bien</response></correctResponse><incorrectResponses><response>mal</response><response>muy mal</response><response>fatal</response></incorrectResponses></assessmentItem><assessmentItem subject="endika" author="endika003@ikasle.ehu.eus"><itemBody><p>endikaendikaendika</p></itemBody><correctResponse><response>endika</response></correctResponse><incorrectResponses><response>endika</response><response>endika</response><response>endika</response></incorrectResponses></assessmentItem><assessmentItem subject="geografia" author="endika003@ikasle.ehu.eus"><itemBody><p>capital de suecia</p></itemBody><correctResponse><response>estocolmo</response></correctResponse><incorrectResponses><response>madrid</response><response>cuenca</response><response>soria</response></incorrectResponses></assessmentItem><assessmentItem subject="gato" author="endika003@ikasle.ehu.eus"><itemBody><p>hola que tal</p></itemBody><correctResponse><response>cansado</response></correctResponse><incorrectResponses><response>hola</response><response>patata</response><response>perro</response></incorrectResponses></assessmentItem><assessmentItem subject="Microsoft" author="kdarko001@ikasle.ehu.eus"><itemBody><p>Quien es el fundador de microsoft</p></itemBody><correctResponse><response>Bill Gates</response></correctResponse><incorrectResponses><response>Pipi calzas largas</response><response>Steve Jobs</response><response>Bochan</response></incorrectResponses></assessmentItem></assessmentItems>
