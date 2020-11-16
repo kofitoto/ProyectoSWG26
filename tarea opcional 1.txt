@@ -3,6 +3,6 @@ con el número de preguntas total del fichero Questions.xml.:
 
 	https://github.com/kofitoto/ProyectoSWG26/blob/main/php/HandlingQuizesAjax.php
 
-Para ello creamos el script el cual posteriormente añadimos HandlingQuizesAjax.php:
+Para ello creamos el script el cual posteriormente añadimos a HandlingQuizesAjax.php:
 
 	https://github.com/kofitoto/ProyectoSWG26/blob/main/js/CountQuestions.js
