@@ -4,6 +4,7 @@
     <?php include '../html/Head.html'?>
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/ShowImageInForm.js"></script>
+    <script src="../js/CheckUserAndPass.js"></script>
     <style>
 		.table_fregister {
 			margin: auto;
@@ -39,11 +40,12 @@
                             </select>
                         </tr>
                         <tr><td>Dirección de correo<sup>*</sup> <input type="email" size="75" id="dirCorreo" name="dirCorreo"></td></tr>
+                        <div id="vip"></div>
                         <tr><td>Nombre y apellido(s)<sup>*</sup> <input type="text" size="75" id="nAp" name="nAp"></td></tr>
                         <tr><td>Contraseña (long>5)<sup>*</sup> <input type="password" size="75" id="pass1" name="pass1"></td></tr>
                         <tr><td>Repite la contraseña<sup>*</sup> <input type="password" size="75" id="pass2" name="pass2"></td></tr>
                         <tr><td>Foto de perfil (opc) <input type="file" id="file" accept="image/*" name="file"><div id="imgDynamica"></div></td></tr>
-                        <tr><td><input type="submit" id="submit" value="Enviar"> <input type="reset" id="reset" value="Limpiar"></td></tr>
+                        <tr><td><input type="submit" name ="submit" id="submit" value="Enviar" disabled="true"> <input type="reset" id="reset" value="Limpiar"></td></tr>
                     </table>
                 </form>
             </div>  
