@@ -4,13 +4,12 @@
 
     $ticket = "1010";
     
-    $soapclient = new nusoap_client('https://'.$_SERVER['HTTP_HOST'].'/ProyectoSWG26/php/verifyPassWS.php?wsdl',true);
+    $soapclient = new nusoap_client('https://www.ehusw.es/jav/ServiciosWeb/comprobarcontrasena.php?wsdl',true);
 
     if($soapclient->getError()){
         echo 'Error al crear el cliente: '.$soapclient->getError();    
     }
     
-    $pass = array('x' => $_REQUEST['pass1'], 'ticket' => $ticket);
-
-    echo $soapclient->call('verificar',$pass);
+    $pass = array('x' => $_REQUEST['pass1'], 'y' => $ticket);
+    echo $soapclient->call('comprobar',$pass);
 ?>

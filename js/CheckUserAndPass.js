@@ -32,7 +32,7 @@ $(document).ready(function(){
                 if(data === "VALIDA")
                 {
                     pass = true;
-                     $('#vip').html('<h3>La contraseña es valida</h3>');
+                    $('#vip').html('<h3>La contraseña es valida</h3>');
                 }else
                 {
                     pass = false;

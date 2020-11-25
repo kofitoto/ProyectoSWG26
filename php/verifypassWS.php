@@ -1,8 +1,8 @@
 <?php
     require_once('../lib/nusoap.php');
     require_once('../lib/class.wsdlcache.php');
-    
-    $ns = "http://".$_SERVER['HTTP_HOST']."/ProyectoSWG26/php";
+    echo"<script>console.log('hola'); </script>";
+    $ns = "https://swevaras.000webhostapp.com/ProyectoSWG26/php";
     $server = new soap_server;
     $server->configureWSDL('verificar',$ns);
     $server->wsdl->schemaTargetNamespace = $ns;
@@ -23,11 +23,12 @@
                 $linea = trim($linea);
                 if($linea==$x)
                 {
+                    echo"<script>console.log('hola'); </script>";
                     $incorrecta = true;
                 }
             }
             fclose($fichero);
-            if($incorrecta===false)
+            if($incorrecta==false)
             {
                 return "VALIDA";
             }
