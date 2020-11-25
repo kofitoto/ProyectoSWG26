@@ -13,7 +13,7 @@
                      $ns);
 
     function verificar($x,$ticket){
-       if($ticket==="1010")
+       if($ticket=="1010")
        {
             $incorrecta = false;
             $fichero = fopen("../txt/toppasswords.txt", "r");
@@ -21,7 +21,7 @@
             {
                 $linea = fgets($fichero);
                 $linea = trim($linea);
-                if($linea===$x)
+                if($linea==$x)
                 {
                     $incorrecta = true;
                 }
