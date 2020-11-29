@@ -1,5 +1,5 @@
+<?php session_start();?>
 <html>
-
 <head>
   <?php include '../html/Head.html'?>
   <style>
@@ -57,10 +57,28 @@
           }
           $row = mysqli_fetch_array($resultado);
           if(!empty($row) && $row['email']==$email && hash_equals($row['pass'], crypt($pass1, $row['pass']))){
-            // echo "<p class=\"success\">Inicio de sesion realizado correctamente<p><br/>";
-            // echo "<span><a href='Layout.php'>Ir al inicio</a></span>";
-            echo "<script> alert(\"¡Bienvenido!\"); document.location.href='Layout.php?logInMail=$email'; </script>";
-					} else {
+            if($row['activado']=='activado'){
+                $_SESSION['autentificado']="SI";
+                $_SESSION['email'] = $row['email'];
+                if($row['email'] == "admin@ehu.es")
+                {
+                    $_SESSION['tipo'] = "admin";
+                }
+                else
+                {
+                    $_SESSION['tipo'] = "usuario";
+                }
+                echo "<script> alert('¡Bienvenido!'); document.location.href='Layout.php?logInMail=$email'; </script>";
+            }
+            else
+            {
+                echo "Este usuario no tiene permitido acceder. <br>";
+                echo "<span><a href='javascript:history.back()'>Volver</a></span>";
+            }
+
+          } 
+          else 
+          {
             echo "<p class=\"error\">Usuario o contraseña incorrectos!<p><br/>";
             // echo "<span><a href=\"javascript:history.back()\">Volver</a></span>";
           }

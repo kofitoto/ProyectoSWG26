@@ -3,6 +3,7 @@
 
 <head>
 	<?php include '../html/Head.html' ?>
+    <?php include 'CheckSesion.php'?>
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/ShowImageInForm.js"></script>
 	<!--<script src="../js/ValidateFieldsQuestion.js"></script>-->

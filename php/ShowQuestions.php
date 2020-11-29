@@ -2,6 +2,7 @@
 <html>
 <head>
   <?php include '../html/Head.html'?>
+    <?php include 'CheckSesion.php'?>
   <style>
 		.table_Questions {
 			margin: auto;

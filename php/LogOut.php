@@ -1,4 +1,4 @@
-
+<?php session_start();session_destroy();?>
 <html>
 <head>
   <?php include '../html/Head.html'?>

@@ -2,6 +2,7 @@
 <html>
 <head>
     <?php include '../html/Head.html'?>
+    <?php include 'CheckSesion.php'?>
 </head>
 <body>
     <?php include '../php/Menus.php' ?>
