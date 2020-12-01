@@ -1,6 +1,12 @@
+<?php include 'CheckSesion.php'?>
+<?php
+    if($_SESSION['tipo']=="admin"){
+        header('location:Layout.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html>
-
 <head>
 	<?php include '../html/Head.html'?>
 	<script src="../js/jquery-3.4.1.min.js"></script>
