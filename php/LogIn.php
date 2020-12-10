@@ -68,7 +68,7 @@
                 {
                     $_SESSION['tipo'] = "usuario";
                 }
-                echo "<script> alert('¡Bienvenido!'); document.location.href='Layout.php?logInMail=$email'; </script>";
+                echo "<script> alert('¡Bienvenido!'); window.location.href='Layout.php';</script>";
             }
             else
             {

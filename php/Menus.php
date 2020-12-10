@@ -22,20 +22,22 @@
   <!--<span><a href='ShowQuestions.php'>Ver preguntas BD</a></span>-->
   <!--<span><a href='prueba.php'>DebugPHP</a></span>-->
   <?php
-    if(isset($_REQUEST['logInMail'])) {
-      $logInMail = $_REQUEST['logInMail'];
-      echo "<span id='inicio'><a id='ini' href='Layout.php?logInMail=$logInMail'>Inicio</a></span>";
-        if($_SESSION['tipo'] == "usuario"){
-            echo "<span id='insertarAJAX'><a id='ins' href='HandlingQuizesAjax.php?logInMail=$logInMail'>Gestionar Preguntas</a></span>";
-        }
-      echo "<span id='creditos'> <a id='cre' href='Credits.php?logInMail=$logInMail'> Creditos </a> </span>";
-      echo "<script> $(\"#h1\").append(\"<p>$logInMail</p>\"); </script>";
-        if($_SESSION['tipo'] == "admin"){
-        echo "<span id='gestion'> <a id='gestionUsu' href='HandlingAccounts.php?    logInMail=$logInMail'> Gestion Usuarios </a> </span>";
-      }
-      //echo "<script> $(\"#h1\").append(\"<img/>\");";
-      echo "<script> showOnLogIn(); </script>";
-    } else {
+    if(isset($_SESSION['autentificado'])){
+        if($_SESSION['autentificado']=="SI") {
+            $logInMail = $_SESSION['email'];
+            echo "<span id='inicio'><a id='ini' href='Layout.php'>Inicio</a></span>";
+            if($_SESSION['tipo'] == "usuario"){
+            echo "<span id='insertarAJAX'><a id='ins' href='HandlingQuizesAjax.php'>Gestionar Preguntas</a></span>";
+            }
+            echo "<span id='creditos'> <a id='cre' href='Credits.php'> Creditos </a> </span>";
+            echo "<script> $(\"#h1\").append(\"<p>$logInMail</p>\"); </script>";
+            if($_SESSION['tipo'] == "admin"){
+            echo "<span id='gestion'> <a id='gestionUsu' href='HandlingAccounts.php'> Gestion Usuarios</a> </span>";
+            }
+            echo "<script> showOnLogIn(); </script>";
+            }
+    }
+     else {
       echo "<span id='inicio'><a id='ini' href='Layout.php'>Inicio</a></span>";
       echo "<span id='creditos'> <a id='cre' href='Credits.php'> Creditos </a> </span>";
       echo "<script> showOnNotLogIn(); </script>";
