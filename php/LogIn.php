@@ -33,7 +33,12 @@
           <tr><th><h2>Iniciar sesion</h2><br/></th></tr>
           <tr><td>Dirección de correo<sup>*</sup> <input type="email" size="65" id="dirCorreo" name="dirCorreo"></td></tr>
           <tr><td>Contraseña<sup>*</sup> <input type="password" size="75" id="pass1" name="pass1"></td></tr>
-          <tr><td><div id="buttons"><input type="submit" id="submit" value="Enviar"> <input type="reset" id="reset" value="Limpiar"></div></td></tr>
+          <tr><td><div id="buttons">
+              <input type="submit" id="submit" value="Enviar"> 
+              <input type="reset" id="reset" value="Limpiar">
+              <p>Restablecer contraseña <a href="ChangePass.php">aqui.</a></p>
+              </div>
+          </td></tr>
         </table>
       </form>
     </div>

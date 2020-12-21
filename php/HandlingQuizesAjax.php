@@ -32,6 +32,9 @@
 </head>
 <body>
 	<?php include '../php/Menus.php' ?>
+    <?php
+        $logInMail = $_SESSION['email'];
+    ?>
 	<section class="main" id="s1">
         <div id="botones">
         <p>
@@ -43,6 +46,7 @@
          <div id="totaldePreguntas" class="tabla">
             <h3>Preguntas usuario/TOTAL</h3>
             <h4 id="preguntasTOTAL"><img src="../images/cargando.gif" width="100"> </h4>
+            <?php echo"<script> setInterval( function() { contarpreguntas('".$logInMail."'); }, 500 ); </script>" ?>
         </div>
 		<div id="formulario" style="display: none"> 
 			<form id='fquestion' name='fquestion' method='POST' enctype='multipart/form-data'>
@@ -53,7 +57,7 @@
 						</th>
 					</tr>
 					<tr>
-						<td>Direccion de correo<sup>*</sup> <input type="text" size="50" id="dirCorreo" name="Direccion de correo"></td>
+						<?php echo "<td>Direccion de correo<sup>*</sup> <input type='text' size='50' id='dirCorreo' name='Direccion de correo' value =".$logInMail." readonly></td>"; ?>
 					</tr>
 					<tr>
 						<td>Enunciado de pregunta<sup>*</sup> <input type="text" size="75" id="pregunta" name="Pregunta"></td>

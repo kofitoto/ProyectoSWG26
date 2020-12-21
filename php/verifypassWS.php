@@ -1,7 +1,6 @@
 <?php
     require_once('../lib/nusoap.php');
     require_once('../lib/class.wsdlcache.php');
-    echo"<script>console.log('hola'); </script>";
     $ns = "https://swevaras.000webhostapp.com/ProyectoSWG26/php";
     $server = new soap_server;
     $server->configureWSDL('verificar',$ns);
